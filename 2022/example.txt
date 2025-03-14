@@ -1,0 +1,65 @@
+line: move 6 from 5 to 7
+ count: 6from: 4 to 6
+extracted_data[to]: DZCVFNJ 
+extracted_data[from]: RQTJCSMW
+count: 6 character: M
+count: 5 character: S
+count: 4 character: C
+count: 3 character: J
+count: 2 character: T
+count: 1 character: Q
+new extracted_data[to]: DZCVFNJWMSCJT
+new extracted_data[from]: RQ
+
+line: move 2 from 9 to 1
+ count: 2from: 8 to 0
+extracted_data[to]: RGJBTVZ 
+extracted_data[from]: JBWVP   
+count: 2 character:  
+count: 1 character:  
+new extracted_data[to]: RGJBTVZ
+new extracted_data[from]: JBWVP   
+
+line: move 4 from 8 to 6
+ count: 4from: 7 to 5
+extracted_data[to]: SWTCHF  
+extracted_data[from]: LGZDWRFQ
+count: 4 character: F
+count: 3 character: R
+count: 2 character: W
+count: 1 character: D
+new extracted_data[to]: SWTCHFQFRW
+new extracted_data[from]: LGZD
+
+line: move 1 from 8 to 1
+ count: 1from: 7 to 0
+extracted_data[to]: RGJBTVZ
+extracted_data[from]: LGZD
+count: 1 character: Z
+new extracted_data[to]: RGJBTVZD
+new extracted_data[from]: LGZ
+
+line: move 2 from 9 to 1
+ count: 2from: 8 to 0
+extracted_data[to]: RGJBTVZD
+extracted_data[from]: JBWVP   
+count: 2 character:  
+count: 1 character:  
+new extracted_data[to]: RGJBTVZD
+new extracted_data[from]: JBWVP   
+
+line: move 1 from 6 to 1
+ count: 1from: 5 to 0
+extracted_data[to]: RGJBTVZD
+extracted_data[from]: SWTCHFQFRW
+count: 1 character: R
+new extracted_data[to]: RGJBTVZDW
+new extracted_data[from]: SWTCHFQFR
+
+line: move 13 from 7 to 8
+ count: 13from: 6 to 7
+extracted_data[to]: LGZ
+extracted_data[from]: DZCVFNJWMSCJT
+count: 13 character: J
+count: 12 character: C
+count: 
