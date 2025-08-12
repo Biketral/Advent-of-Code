@@ -12,8 +12,8 @@ public class DayTwo {
         int countSafeLines = 0;
         while (myReader.hasNextLine()) {
             String line = myReader.nextLine();
-           System.out.println(line + " + " + countSafeLines);
-            if (isSafe(line) ) {
+            int[] numbers = parseLineToNumbers(line);
+            if (isSequenceSafe(numbers) ) {
                 countSafeLines++;
             } 
         }
@@ -28,33 +28,37 @@ public class DayTwo {
 
 	}
 	
-	
-	private static boolean isSafe(String line) {
-	    int[] numbers = Arrays.stream(line.trim().split("\\s+"))
+	private static int[] parseLineToNumbers(final String line) {
+	    return Arrays.stream(line.trim().split("\\s+"))
                      .mapToInt(Integer::parseInt)
                      .toArray();
-                     
+	}
+	
+	
+	private static boolean isSequenceSafe(final int[] numbers) {
         boolean isIncreasing = numbers[0] < numbers[1];
 	    for (int i = 0; i < numbers.length-1; i++) {
             int firstNumber = numbers[i];
             int secondNumber = numbers[i+1];
-            if (firstNumber == secondNumber) {
-                return false;
-            }
-            if ( hasDifferViolation(firstNumber, secondNumber) ) {
-                return false;
-            }
             
+            
+            if (areEqual(firstNumber, secondNumber)) { return false; }
+            if (isDifferenceInvalid(firstNumber, secondNumber) ) { return false; }
             if (isIncreasing && firstNumber > secondNumber) return false;
             if (!isIncreasing && firstNumber < secondNumber) return false;
 	    }
 
 	    return true;
 	}
-	
-	private static boolean hasDifferViolation(int firstNumber, int secondNumber) {
+	private static boolean areEqual(final int firstNumber, final int secondNumber) {
+        if(firstNumber == secondNumber) {
+            return true;
+        }
+        return false;
+	}
+	private static boolean isDifferenceInvalid(final int firstNumber, final int secondNumber) {
         int difference = Math.abs(firstNumber - secondNumber);
-        if (difference == 1 || difference == 2 || difference == 3) {
+        if (difference >= 1 && difference <= 3) {
             return false;
         }
         return true;
