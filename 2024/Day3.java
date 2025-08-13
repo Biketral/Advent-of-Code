@@ -8,7 +8,7 @@ import java.util.Scanner;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-public class DayThree {
+public class Day3 {
 	public static List<String> matches = new ArrayList<>();
 	public static List<Integer> tempResults = new ArrayList<>();
 	public static Pattern pattern = Pattern.compile("mul\\((\\d+),(\\d+)\\)");
