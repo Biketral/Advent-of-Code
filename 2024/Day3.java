@@ -16,7 +16,7 @@ public class Day3 {
 	public static void main(String[] args) {
 		try {
 			
-			File myObj = new File("C:\\Users\\Görkem\\git/Advent-of-Code/2024/day_3/day3_input");
+			File myObj = new File("day3_input");
 			Scanner myReader = new Scanner(myObj);
 			
 			while (myReader.hasNextLine()) {			
