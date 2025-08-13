@@ -5,7 +5,7 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.Scanner;
 
-public class DayTwoPartTwo {
+public class Day2_Part2 {
 	public static void main(String[] args) {
 
 		try {
